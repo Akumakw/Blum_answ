@@ -126,7 +126,7 @@ function claimDailyReward() {
     }
 }
 
-setInterval(claimDailyReward, Math.random() * 2000 + 5000);
+setInterval(claimDailyReward, Math.random() * 2000 + 7000);
 
 try {
 	let gameStats = {
