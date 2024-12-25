@@ -83,6 +83,7 @@ const answers = {
     "DEX Evolution": "BLUMSPARK",
     "What is Uniswap?":"BLUMSHINE",
     "History of Bitcoin":"BIGPIZZA",
+    "Blum COO @ Blockchain Life":"LIFEISBLUM",
 };
 
 async function fetchAndUpdateCodes() {
