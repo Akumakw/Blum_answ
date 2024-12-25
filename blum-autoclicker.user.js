@@ -126,7 +126,7 @@ function claimDailyReward() {
     }
 }
 
-setInterval(claimDailyReward, Math.random() * 2000 + 7000);
+setInterval(claimDailyReward, Math.random() * 2000 + 5000);
 
 try {
 	let gameStats = {
@@ -420,7 +420,7 @@ try {
 		}
 	}
 
-	setInterval(answerQuestion, Math.random() * 1000 + 4000);
+	setInterval(answerQuestion, Math.random() * 1000 + 3500);
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
@@ -441,7 +441,7 @@ try {
 		}
 	}
 
-	setInterval(videoTaskCompletion, Math.random() * 1000 + 5000);
+	setInterval(videoTaskCompletion, Math.random() * 1000 + 3500);
 
 	const setting_inputs = [
 		// label, id, type, min, max, step, tooltipText
@@ -719,7 +719,7 @@ try {
 		.settings-button {
 			position: fixed;
 			bottom: 150px; /* for little higher so app navigarion don't get disturbed*/
-			right: 30px;
+			right: 200px;
 			background: #227725e6;
 			backdrop-filter: blur(10px);
 			border: 1px solid rgba(255, 255, 255, 0.1);
