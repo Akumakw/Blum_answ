@@ -25,7 +25,7 @@ let GAME_SETTINGS = {
 	dogsProbability: (98 + Math.random()) / 100,
 	checkForUpdates: true,
 	autoVideoTask: true,
-	autoVerifyCode: false,
+	autoVerifyCode: true,
 	autoClaimTask: true,
 };
 
