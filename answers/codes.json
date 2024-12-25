@@ -1,5 +1,5 @@
 {
-    "How to Analyze Crypto": "VALUE",
+    "How to Analyze Crypto?": "VALUE",
     "What’s DAO?": "N/A",
     "Ton voices live": "I LOVE BLUM",
     "Forks Explained": "GO GET",
@@ -14,9 +14,9 @@
     "Play Track and Type Track Name": "BLUM – BIG CITY LIFE",
     "How to Memecoin?": "MEMEBLUM",
     "Token Burning: How & Why?": "ONFIRE",
-    "Bitcoin Rainbow Chart": "SOBLUM",
+    "Bitcoin Rainbow Chart?": "SOBLUM",
     "Crypto Terms. Part 1": "BLUMEXPLORER",
-    "How to Trade Perps?": "CRYPTOFAN",
+    "How to trade Perps?": "CRYPTOFAN",
     "Sharding Explained": "BLUMTASTIC",
     "DeFi Explained": "BLUMFORCE",
     "How To Find Altcoins?": "ULTRABLUM",
@@ -25,7 +25,7 @@
     "Pumptober Special": "PUMPIT",
     "DeFi Risks: Key Insights": "BLUMHELPS",
     "Crypto Slang. Part 2": "FOMOOO",
-    "What’s Crypto DEX?": "DEXXX",
+    "What's Crypto DEX?": "DEXXX",
     "Choosing a Crypto Exchange": "CRYPTOZONE",
     "Node Sales in Crypto": "BLUMIFY",
     "Understanding Gas Fees": "CRYPTOGAS",
@@ -39,7 +39,6 @@
     "P2P Trading Safety Tips": "BLUMTIPS",
     "Crypto Communities": "BLUMMUNITY",
     "Dec 6 Crypto News": "HUNDRED",
-    "Dex Evolution": "BLUMSPARK",
     "Crypto Slang. Part 4": "LAMBOBLUM",
     "What Are AMMs?": "CRYPTOSMART",
     "Memepad Tutorial": "MEMEPAD",
@@ -49,5 +48,8 @@
     "Crypto Slang. Part 5": "GONNABLUM",
     "Crypto in Everyday Life": "BLUMANCE",
     "Trade any memecoin": "N/A",
-    "Launch a memecoin": "N/A"
-}
+    "Launch a memecoin": "N/A",
+    "DEX Evolution": "BLUMSPARK",
+	"What is Uniswap?":"BLUMSHINE",
+	"History of Bitcoin":"BIGPIZZA",
+	}
