@@ -420,7 +420,7 @@ try {
 		}
 	}
 
-	setInterval(answerQuestion, Math.random() * 1000 + 2000);
+	setInterval(answerQuestion, Math.random() * 1000 + 4000);
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
@@ -441,7 +441,7 @@ try {
 		}
 	}
 
-	setInterval(videoTaskCompletion, Math.random() * 1000 + 3000);
+	setInterval(videoTaskCompletion, Math.random() * 1000 + 5000);
 
 	const setting_inputs = [
 		// label, id, type, min, max, step, tooltipText
