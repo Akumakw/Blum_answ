@@ -85,6 +85,7 @@ const answers = {
     "History of Bitcoin":"BIGPIZZA",
     "Blum COO @ Blockchain Life":"LIFEISBLUM",
     "Future of Telegram. Part 1":"TAPBLUM",
+    "Blum CEO @ Binance Blockchain Week":"BLUMGOALS",
 };
 
 async function fetchAndUpdateCodes() {
@@ -420,7 +421,7 @@ try {
 		}
 	}
 
-	setInterval(answerQuestion, Math.random() * 1000 + 3500);
+	setInterval(answerQuestion, Math.random() * 1000 + 4850);
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
