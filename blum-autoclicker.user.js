@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         Blum Autoclicker
-// @version      3.9
+// @name         Blum Autoclicker Ak
+// @version      3.9.1
 // @namespace    Violentmonkey Scripts9
 // @author       mudachyo
 // @match        https://telegram.blum.codes/*
 // @grant        none
 // @icon         https://cdn.prod.website-files.com/65b6a1a4a0e2af577bccce96/65ba99c1616e21b24009b86c_blum-256.png
-// @downloadURL  https://github.com/mudachyo/Blum/raw/main/blum-autoclicker.user.js
-// @updateURL    https://github.com/mudachyo/Blum/raw/main/blum-autoclicker.user.js
+// @downloadURL  https://github.com/Akumakw/Blum_answ/raw/main/blum-autoclicker.user.js
+// @updateURL    https://github.com/Akumakw/Blum_answ/raw/main/blum-autoclicker.user.js
 // @homepage     https://github.com/mudachyo/Blum
 // ==/UserScript==
 
