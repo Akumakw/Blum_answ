@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name         Blum Autoclicker settings
-// @version      3.8.2
-// @namespace    Violentmonkey Scripts
+// @name         Blum Autoclicker
+// @version      3.9
+// @namespace    Violentmonkey Scripts9
 // @author       mudachyo
 // @match        https://telegram.blum.codes/*
 // @grant        none
 // @icon         https://cdn.prod.website-files.com/65b6a1a4a0e2af577bccce96/65ba99c1616e21b24009b86c_blum-256.png
-// @downloadURL  https://github.com/Akumakw/Blum_answ/blob/main/blum-autoclicker.user.js
-// @updateURL    https://github.com/Akumakw/Blum_answ/blob/main/blum-autoclicker.user.js
+// @downloadURL  https://github.com/mudachyo/Blum/raw/main/blum-autoclicker.user.js
+// @updateURL    https://github.com/mudachyo/Blum/raw/main/blum-autoclicker.user.js
 // @homepage     https://github.com/mudachyo/Blum
 // ==/UserScript==
 
-const SCRIPT_VERSION = '3.8.2';
+const SCRIPT_VERSION = '3.9';
 
 var _0xodm='jsjiami.com.v7';const _0x38aed6=_0x41f6;function _0x41f6(_0x1feabc,_0x1b96e4){const _0x293bfc=_0x293b();return _0x41f6=function(_0x41f6cf,_0x363372){_0x41f6cf=_0x41f6cf-0x84;let _0x3ae0b9=_0x293bfc[_0x41f6cf];if(_0x41f6['GnNqHE']===undefined){var _0x446c23=function(_0x49eebd){const _0x346223='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x13d35f='',_0x27ce07='';for(let _0x1fe167=0x0,_0x59bf06,_0x50a266,_0x40f71c=0x0;_0x50a266=_0x49eebd['charAt'](_0x40f71c++);~_0x50a266&&(_0x59bf06=_0x1fe167%0x4?_0x59bf06*0x40+_0x50a266:_0x50a266,_0x1fe167++%0x4)?_0x13d35f+=String['fromCharCode'](0xff&_0x59bf06>>(-0x2*_0x1fe167&0x6)):0x0){_0x50a266=_0x346223['indexOf'](_0x50a266);}for(let _0x49e053=0x0,_0x39c638=_0x13d35f['length'];_0x49e053<_0x39c638;_0x49e053++){_0x27ce07+='%'+('00'+_0x13d35f['charCodeAt'](_0x49e053)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x27ce07);};const _0x3187c6=function(_0x3e6ccd,_0xeaa47a){let _0x117bac=[],_0x2808eb=0x0,_0x7f390c,_0x432405='';_0x3e6ccd=_0x446c23(_0x3e6ccd);let _0x25e986;for(_0x25e986=0x0;_0x25e986<0x100;_0x25e986++){_0x117bac[_0x25e986]=_0x25e986;}for(_0x25e986=0x0;_0x25e986<0x100;_0x25e986++){_0x2808eb=(_0x2808eb+_0x117bac[_0x25e986]+_0xeaa47a['charCodeAt'](_0x25e986%_0xeaa47a['length']))%0x100,_0x7f390c=_0x117bac[_0x25e986],_0x117bac[_0x25e986]=_0x117bac[_0x2808eb],_0x117bac[_0x2808eb]=_0x7f390c;}_0x25e986=0x0,_0x2808eb=0x0;for(let _0x587aef=0x0;_0x587aef<_0x3e6ccd['length'];_0x587aef++){_0x25e986=(_0x25e986+0x1)%0x100,_0x2808eb=(_0x2808eb+_0x117bac[_0x25e986])%0x100,_0x7f390c=_0x117bac[_0x25e986],_0x117bac[_0x25e986]=_0x117bac[_0x2808eb],_0x117bac[_0x2808eb]=_0x7f390c,_0x432405+=String['fromCharCode'](_0x3e6ccd['charCodeAt'](_0x587aef)^_0x117bac[(_0x117bac[_0x25e986]+_0x117bac[_0x2808eb])%0x100]);}return _0x432405;};_0x41f6['mNwRJB']=_0x3187c6,_0x1feabc=arguments,_0x41f6['GnNqHE']=!![];}const _0x59002a=_0x293bfc[0x0],_0x56c701=_0x41f6cf+_0x59002a,_0x424a4a=_0x1feabc[_0x56c701];return!_0x424a4a?(_0x41f6['cTNJVD']===undefined&&(_0x41f6['cTNJVD']=!![]),_0x3ae0b9=_0x41f6['mNwRJB'](_0x3ae0b9,_0x363372),_0x1feabc[_0x56c701]=_0x3ae0b9):_0x3ae0b9=_0x424a4a,_0x3ae0b9;},_0x41f6(_0x1feabc,_0x1b96e4);}(function(_0x2abcd2,_0xe4b2bf,_0x13c99c,_0xa26a3e,_0x533b01,_0x55eeba,_0x291c29){return _0x2abcd2=_0x2abcd2>>0x2,_0x55eeba='hs',_0x291c29='hs',function(_0xa28264,_0x292210,_0x232627,_0x453032,_0x2509c9){const _0x404367=_0x41f6;_0x453032='tfi',_0x55eeba=_0x453032+_0x55eeba,_0x2509c9='up',_0x291c29+=_0x2509c9,_0x55eeba=_0x232627(_0x55eeba),_0x291c29=_0x232627(_0x291c29),_0x232627=0x0;const _0x5c6b37=_0xa28264();while(!![]&&--_0xa26a3e+_0x292210){try{_0x453032=parseInt(_0x404367(0x8a,'N3g&'))/0x1+parseInt(_0x404367(0x93,'clOW'))/0x2*(-parseInt(_0x404367(0x8d,'K[^S'))/0x3)+parseInt(_0x404367(0x86,'E6tj'))/0x4*(-parseInt(_0x404367(0x8c,'wuTE'))/0x5)+-parseInt(_0x404367(0x8b,'E5J)'))/0x6+-parseInt(_0x404367(0x8e,'%pS3'))/0x7+parseInt(_0x404367(0x84,'7(bw'))/0x8+parseInt(_0x404367(0x89,')rkI'))/0x9;}catch(_0x173ead){_0x453032=_0x232627;}finally{_0x2509c9=_0x5c6b37[_0x55eeba]();if(_0x2abcd2<=_0xa26a3e)_0x232627?_0x533b01?_0x453032=_0x2509c9:_0x533b01=_0x2509c9:_0x232627=_0x2509c9;else{if(_0x232627==_0x533b01['replace'](/[IwYtxGbfTFyOpVXqJeUQuB=]/g,'')){if(_0x453032===_0x292210){_0x5c6b37['un'+_0x55eeba](_0x2509c9);break;}_0x5c6b37[_0x291c29](_0x2509c9);}}}}}(_0x13c99c,_0xe4b2bf,function(_0x450602,_0xf1d107,_0x24e9ea,_0x5c8feb,_0x5c9362,_0x2b3254,_0x579efa){return _0xf1d107='\x73\x70\x6c\x69\x74',_0x450602=arguments[0x0],_0x450602=_0x450602[_0xf1d107](''),_0x24e9ea='\x72\x65\x76\x65\x72\x73\x65',_0x450602=_0x450602[_0x24e9ea]('\x76'),_0x5c8feb='\x6a\x6f\x69\x6e',(0x18e1fd,_0x450602[_0x5c8feb](''));});}(0x328,0x8a858,_0x293b,0xcc),_0x293b)&&(_0xodm=`\x469`);const SCRIPT_URL=_0x38aed6(0x88,')rkI');function _0x293b(){const _0x14e508=(function(){return[_0xodm,'GjTUsFYjuwVitaJFmBiO.ycfoempb.GXqvQ7JqIx==','WOuPDselih8U','WONcM8kiWRjigWBcN8oYzCkf','W6lcNwDBBSoBWRVdSfZcKmoc','cSocW4jrWR0xs8kcsJ1Njq','W5/cRdddTSobW7ZdUrpcTHv3wWK'].concat((function(){return['WPJcTa1VhCkHWP/dKKDBWQ7cV8oxWOK','W6GNWPHeW4uupSk7dq','tL8ZE8o6amkEr0BcH8op','WOWBW73dLNqGW4FdRSkvtqRcUSkwmNpcOuBcVCorFSkilheQW4qVWR97B8odwLRcOW/cVHBcT8oosGFdL1xcTGlcRSoKfSkDWOVdV1TcgwtdGx3dQmo4BCoPq8klzCkxWQRdTmk6EcVcVdFcJapcUSozvKG','W5vEWRNcLtuIW5NdS8kMBItdH8k0hG','W7/cOZtdOdCwW5xdOKRcLmoNga','lvVdNNZdT8oaW5tdNLahW77dVmoY'].concat((function(){return['W4y1WQ3cI8oNvYq4W6BdLCoN','kSk8W5jLW7FdPmkapq','xc3cLK7cHcxcJXj2WQeAWOpcMq','vIVcLuRcIIpcIdPfWPy7WPdcKW','kmk/WPb3W4tdSmkngCkq'];}()));}()));}());_0x293b=function(){return _0x14e508;};return _0x293b();};var version_ = 'jsjiami.com.v7';
 
@@ -81,11 +81,28 @@ const answers = {
     "Trade any memecoin": "N/A",
     "Launch a memecoin": "N/A",
     "DEX Evolution": "BLUMSPARK",
-    "What is Uniswap?":"BLUMSHINE",
-    "History of Bitcoin":"BIGPIZZA",
-    "Blum COO @ Blockchain Life":"LIFEISBLUM",
-    "Future of Telegram. Part 1":"TAPBLUM",
-    "Blum CEO @ Binance Blockchain Week":"BLUMGOALS",
+    "What is Uniswap?": "BLUMSHINE",
+    "History of Bitcoin": "BIGPIZZA",
+    "Blum COO @ Blockchain Life": "LIFEISBLUM",
+    "Future of Telegram. Part 1": "TAPBLUM",
+    "Blum CEO @ Binance Blockchain Week": "BLUMGOALS",
+    "Dec 20 News": "TRUMP",
+    "Dec 18 News": "MARK",
+    "Dec 17 News": "Kendrick",
+    "Dec 16 News": "BITCOIN",
+    "Dec 13 News": "BITCOINJESUS",
+    "Dec 12 News": "RIPPLE",
+    "Dec 10 News": "ELSALVADOR",
+    "Blum at Binance Blockchain Week": "BLUMWEEK",
+    "Telegram Trends #2": "BLUUUM",
+    "Can Bitcoin be Hacked?": "QUANTUMBTC",
+    "Crypto market 2025": "CRYPTO2025",
+    "Community building": "BUILD",
+    "Telegram Trends #3": "MEGABLUM",
+    "Telegram Trends #4": "GOTAP",
+    "S1 Weekly Giveaway": "GIVEAWAY",
+    "BITGET on TON with Vladimir Smerkis": "BITGET",
+    "Blum and TOP": "TOP"
 };
 
 async function fetchAndUpdateCodes() {
@@ -115,17 +132,20 @@ fetchAndUpdateCodes();
 let isGameToolPaused = false;
 
 function claimDailyReward() {
-    const widget = document.querySelector('.pages-index-widgets-daily-reward.widget');
+    const widget = document.querySelector('.widget.has-radius');
     
     if (widget) {
-        const claimButton = widget.querySelector('.kit-pill.reset.is-state-claim.is-style-default.pill');
+        const claimButton = widget.querySelector('.kit-pill-claim.is-state-claim');
         
         if (claimButton) {
             claimButton.click();
             console.log('Ежедневная награда забрана!');
+        } else {
         }
+    } else {
     }
 }
+
 
 setInterval(claimDailyReward, Math.random() * 2000 + 5000);
 
@@ -281,6 +301,7 @@ try {
 		return Math.random() * (maxDelay - minDelay) + minDelay;
 	}
 
+	// Функция проверки завершилась ли игра
 	function checkGameCompletion() {
 		const rewardElement = document.querySelector('#app > div > div > div.content > div.reward');
 		if (rewardElement && !gameStats.isGameOver) {
@@ -289,6 +310,7 @@ try {
 		}
 	}
 
+	// Функция для сброса статистики после завершения игры
 	function resetGameStats() {
 		gameStats = {
 			score: 0,
@@ -304,8 +326,9 @@ try {
 		return Math.floor(Math.random() * (GAME_SETTINGS.maxDelayMs - GAME_SETTINGS.minDelayMs + 1) + GAME_SETTINGS.minDelayMs);
 	}
 
+	// Функция AutoPlay
 	function checkAndClickPlayButton() {
-		const playButtons = document.querySelectorAll('button.kit-button.is-large.is-primary, a.play-btn[href="/game"], button.kit-button.is-large.is-primary');
+		const playButtons = document.querySelectorAll('button.kit-button.is-large.is-primary, button.kit-pill.reset.is-type-white.pill');
 
 		playButtons.forEach(button => {
 			if (!isGameToolPaused && GAME_SETTINGS.autoClickPlay && button.textContent.trim().length > 0) {
@@ -318,6 +341,7 @@ try {
 		});
 	}
 
+	// Функция обновления страницы в случае ошибки
 	function checkAndClickResetButton() {
 		const errorPage = document.querySelector('div[data-v-26af7de6].error.page.wrapper');
 		if (errorPage) {
@@ -421,7 +445,7 @@ try {
 		}
 	}
 
-	setInterval(answerQuestion, Math.random() * 1000 + 4850);
+	setInterval(answerQuestion, Math.random() * 1000 + 2000);
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
@@ -442,7 +466,7 @@ try {
 		}
 	}
 
-	setInterval(videoTaskCompletion, Math.random() * 1000 + 3500);
+	setInterval(videoTaskCompletion, Math.random() * 1000 + 3000);
 
 	const setting_inputs = [
 		// label, id, type, min, max, step, tooltipText
@@ -720,7 +744,7 @@ try {
 		.settings-button {
 			position: fixed;
 			bottom: 150px; /* for little higher so app navigarion don't get disturbed*/
-			right: 200px;
+			right: 30px;
 			background: #227725e6;
 			backdrop-filter: blur(10px);
 			border: 1px solid rgba(255, 255, 255, 0.1);
@@ -815,7 +839,7 @@ try {
 
 		function AutoClaimAndStart() {
 			setInterval(() => {
-				const claimButton = document.querySelector('button.kit-button.is-large.is-drop.is-fill.button.is-done');
+				const claimButton = document.querySelector('#app > div.index-page.page > div.pages-index-points > div > div:nth-child(2) > div.right-slot > div > button');
 				const startFarmingButton = document.querySelector('button.kit-button.is-large.is-primary.is-fill.button');
 				const continueButton = document.querySelector('button.kit-button.is-large.is-primary.is-fill.btn');
 				if (claimButton) {
