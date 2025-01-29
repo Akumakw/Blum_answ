@@ -30,7 +30,7 @@ let GAME_SETTINGS = {
 };
 
 const answers = {
-    "How to Analyze Crypto?": "VALUE",
+       "How to Analyze Crypto?": "VALUE",
     "What’s DAO?": "N/A",
     "Ton voices live": "I LOVE BLUM",
     "Forks Explained": "GO GET",
@@ -102,7 +102,9 @@ const answers = {
     "Telegram Trends #4": "GOTAP",
     "S1 Weekly Giveaway": "GIVEAWAY",
     "BITGET on TON with Vladimir Smerkis": "BITGET",
-    "Blum and TOP": "TOP"
+    "Blum and TOP": "TOP",
+    "BITGET on TON with Vlad Smerkis":"BITGET",
+    "Chartered Cities Explained":"PROSPERA"
 };
 
 async function fetchAndUpdateCodes() {
