@@ -467,14 +467,19 @@ try {
 	
 		if (GAME_SETTINGS.autoVerifyCode) {
 			let buttons = Array.from(document.querySelectorAll(".tasks-list button[class*=not-started]")).reverse(); // Разворачиваем массив
-			buttons.forEach((e, i) => {
+		
+			console.log(`Обнаружено ${buttons.length} кнопок для нажатия.`); // Вывод количества кнопок в консоль
+		
+			for (let i = 0; i < buttons.length; i++) {
 				setTimeout(() => {
-					if (document.contains(e)) { // Проверяем, существует ли элемент перед кликом
-						e.click();
+					let currentButtons = document.querySelectorAll(".tasks-list button[class*=not-started]"); // Получаем актуальный список кнопок
+					if (currentButtons[i]) { // Проверяем, существует ли кнопка с таким индексом
+						currentButtons[i].click();
 					}
-				}, i * 2000); // Пауза 2 сек между кликами
-			});
+				}, i * 2000); // Пауза 2 секунды между кликами
+			}
 		}
+		
 	
 		if (GAME_SETTINGS.autoClaimTask) {
 			Array.from(document.querySelectorAll("button.is-status-ready-for-claim"))
