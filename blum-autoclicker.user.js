@@ -147,7 +147,7 @@ function claimDailyReward() {
 }
 
 
-setInterval(claimDailyReward, Math.random() * 2000 + 5000);
+setInterval(claimDailyReward, Math.random() * 2000 + 7000);
 
 try {
 	let gameStats = {
@@ -445,7 +445,7 @@ try {
 		}
 	}
 
-	setInterval(answerQuestion, Math.random() * 1000 + 2000);
+	setInterval(answerQuestion, Math.random() * 1000 + 4850);
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
@@ -466,7 +466,7 @@ try {
 		}
 	}
 
-	setInterval(videoTaskCompletion, Math.random() * 1000 + 3000);
+	setInterval(videoTaskCompletion, Math.random() * 1000 + 4000);
 
 	const setting_inputs = [
 		// label, id, type, min, max, step, tooltipText
