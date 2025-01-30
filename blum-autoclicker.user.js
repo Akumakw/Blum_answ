@@ -451,45 +451,22 @@ try {
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
-	
 		if (GAME_SETTINGS.autoVideoTask) {
-			let verifyBtns = Array
-				.from(document.querySelectorAll(".pages-tasks-item:has(>*>*>button.is-status-ready-for-verify) .details"))
-				.filter(verifyBtn => verifyBtn.childNodes[0].textContent in answers)
-				.reverse(); // Разворачиваем массив, чтобы кликать с конца
-	
-			if (verifyBtns.length > 0) {
-				setTimeout(() => {
-					verifyBtns[0]?.parentElement?.lastChild?.click();
-				}, 800);
-			}
+			Array
+				.from(
+					document.querySelectorAll(".pages-tasks-item:has(>*>*>button.is-status-ready-for-verify) .details"))
+				.filter(
+					verifyBtn => verifyBtn.childNodes[0].textContent in answers
+				)[0]
+				?.parentElement?.lastChild?.click();
 		}
-	
 		if (GAME_SETTINGS.autoVerifyCode) {
-			let buttons = Array.from(document.querySelectorAll(".tasks-list button[class*=not-started]")).reverse(); // Разворачиваем массив
-		
-			console.log(`Обнаружено ${buttons.length} кнопок для нажатия.`); // Вывод количества кнопок в консоль
-		
-			for (let i = 0; i < buttons.length; i++) {
-				setTimeout(() => {
-					let currentButtons = document.querySelectorAll(".tasks-list button[class*=not-started]"); // Получаем актуальный список кнопок
-					if (currentButtons[i]) { // Проверяем, существует ли кнопка с таким индексом
-						currentButtons[i].click();
-					}
-				}, i * 2000); // Пауза 2 секунды между кликами
-			}
+			document.querySelectorAll(".tasks-list button[class*=not-started]").forEach(e => { e.click() });
 		}
-		
-	
 		if (GAME_SETTINGS.autoClaimTask) {
-			Array.from(document.querySelectorAll("button.is-status-ready-for-claim"))
-				.reverse() // Разворачиваем массив кнопок
-				.forEach((e, i) => {
-					setTimeout(() => { e.click(); }, i * 1000);
-				});
+			document.querySelectorAll("button.is-status-ready-for-claim").forEach(e => { e.click() });
 		}
 	}
-	
 	
 
 	setInterval(videoTaskCompletion, Math.random() * 1000 + 3000);
