@@ -451,54 +451,20 @@ try {
 
 	function videoTaskCompletion() {
 		if (isGameToolPaused) return;
-	
 		if (GAME_SETTINGS.autoVideoTask) {
-			let verifyBtns = Array
-				.from(document.querySelectorAll(".pages-tasks-item:has(>*>*>button.is-status-ready-for-verify) .details"))
-				.filter(verifyBtn => verifyBtn.childNodes[0].textContent in answers);
-		
-			let totalButtons = verifyBtns.length; // Запоминаем количество кнопок
-		
-			console.log(`Обнаружено ${totalButtons} кнопок для проверки.`);
-		
-			for (let i = 0; i < totalButtons; i++) {
-				setTimeout(() => {
-					let currentBtns = document.querySelectorAll(".pages-tasks-item:has(>*>*>button.is-status-ready-for-verify) .details");
-					let button = currentBtns[totalButtons - 1 - i]; // Берем кнопку по индексу из исходного списка
-					if (button) {
-						button.parentElement?.lastChild?.click();
-						console.log(`Нажата кнопка №${i + 1}`);
-					}
-				}, i * 650); // Пауза 800 мс между кликами
-			}
+			Array
+				.from(
+					document.querySelectorAll(".pages-tasks-item:has(>*>*>button.is-status-ready-for-verify) .details"))
+				.filter(
+					verifyBtn => verifyBtn.childNodes[0].textContent in answers
+				)[0]
+				?.parentElement?.lastChild?.click();
 		}
-		
-	
 		if (GAME_SETTINGS.autoVerifyCode) {
-			let buttons = Array.from(document.querySelectorAll(".tasks-list button[class*=not-started]")).reverse(); // Разворачиваем массив
-			let totalButtons = buttons.length; // Запоминаем количество кнопок
-		
-			console.log(`Обнаружено ${totalButtons} кнопок для нажатия.`); // Логируем количество кнопок
-		
-			for (let i = 0; i < totalButtons; i++) {
-				setTimeout(() => {
-					let button = document.querySelectorAll(".tasks-list button[class*=not-started]")[totalButtons - 1 - i]; 
-					if (button) {
-						button.click();
-						console.log(`Нажата кнопка №${i + 1}`);
-					}
-				}, i * 800); // Пауза 2 секунды между кликами
-			}
+			document.querySelectorAll(".tasks-list button[class*=not-started]").forEach(e => { e.click() });
 		}
-		
-		
-	
 		if (GAME_SETTINGS.autoClaimTask) {
-			Array.from(document.querySelectorAll("button.is-status-ready-for-claim"))
-				.reverse() // Разворачиваем массив кнопок
-				.forEach((e, i) => {
-					setTimeout(() => { e.click(); }, i * 800);
-				});
+			document.querySelectorAll("button.is-status-ready-for-claim").forEach(e => { e.click() });
 		}
 	}
 	
